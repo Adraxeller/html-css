@@ -48,11 +48,13 @@ header a:hover, footer a:hover{
 }
 section{
     padding-top: 10hv;
-    padding-bottom: 10vh;
     line-height: 2em;
-    padding-left: 30px;
     font-family: var(--fonte3);
     font-size: 3vw;
+}
+section > p{ 
+    padding-bottom: 1em;
+    padding-left: 1em;
 }
 section.normal{
     background-color: white;
@@ -61,10 +63,31 @@ section.normal{
 section.imagem{
     background-color: rgb(51, 51, 51);
     color: white;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.473);
+    background-size: cover;
+    background-attachment: fixed;
+    padding-left: em;
+     
+    /*pode tiara o 2 background-size: cover; dos 2 section imag01 e 02 e por só um aqui na section imagem*/
 }
 section.imagem >p{
     display: inline-block;
-    background-color: rgba(0, 0, 0, 0.253);
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 0.514);
+    text-shadow: 1px 1px 0px black;
+}
+section#img01{
+   background-image: url('../imagens/background001.jpg');
+   background-position: right center;
+   background-size: cover;
+   padding-left: 5vh;
+   text-rendering: 5vh;
+}
+section#img02{
+    background-image: url('../imagens/background002.jpg');
+    background-size: cover;
+    text-indent: 5vh;
+   
 }
 footer{
     background-color: black;
