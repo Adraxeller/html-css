@@ -66,9 +66,9 @@ section.imagem{
     box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.473);
     background-size: cover;
     background-attachment: fixed;
-    padding-left: em;
+    
      
-    /*pode tiara o 2 background-size: cover; dos 2 section imag01 e 02 e por só um aqui na section imagem*/
+    /*pode tira o 2 background-size: cover; dos 2 section imag01 e 02 e por só um aqui na section imagem*/
 }
 section.imagem >p{
     display: inline-block;
