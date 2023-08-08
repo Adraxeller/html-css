@@ -11,6 +11,7 @@
         table{
             width: 500px;
             border-collapse: collapse;
+            position: relative; /*configurçao para titulo estatico*/
         }
         td, th{
             border: 1px solid black;
@@ -25,6 +26,19 @@
         thead, tfoot{
             background-color: rgb(0, 0, 0);
             color: white;
+        }
+        thead > tr > th{ /*configurçao para titulo estatico*/
+            position: sticky;
+            top: -1px;
+            background-color: rgb(67, 78, 240);
+        }
+        tbody >tr:nth-child(odd){ /* 2n-1 */
+            background-color: rgba(0, 0, 0, 0.479);
+            font-weight: bold;
+        }
+        tbody > tr:nth-child(2n){ /* 2n */
+            background-color: lightgray;
+            text-decoration: underline;
         }
         td.num{
             text-align: right;
@@ -48,6 +62,14 @@
             coerente dos dados 
             Scope="cool" para dados que estiverem na mesma coluna
             Scope="row" para dados na mesma linha
+
+            :nth-child(2n) -> para pôr efeito zebrado nas tabelas 
+            (2n) -> numero de tabelas q terão o efito zebrado
+            pulando de 2 em 2
+
+            (odd) -> para efeito zebrado em celulas impares
+
+            (even) -> para efetio zebrado em celulas pares
     -->
     <table>
         <caption>
@@ -176,5 +198,18 @@
             </tr>
         </tfoot>
     </table>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, cumque sed in possimus assumenda atque nihil cum necessitatibus recusandae consectetur, adipisci sunt modi! Earum delectus debitis veritatis totam ipsam nisi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae dolor culpa nulla a accusantium, vel ut delectus tempore error. Inventore, vitae rerum! Ducimus assumenda ipsa non magnam, laboriosam harum aperiam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore inventore dolore mollitia, nesciunt minima similique blanditiis excepturi? Neque odio necessitatibus tempore beatae! Porro pariatur nihil dolore mollitia. Modi, atque non?</p>
+    
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur minima nesciunt tenetur aut earum dolorum magnam dolore voluptate non, error deserunt ipsam maxime veniam id accusantium tempora dicta excepturi saepe! Lorem ipsum dolor sit amet consectetur adipisicing elit. In sint dolorum perferendis voluptate magni obcaecati iusto. Dolore et necessitatibus pariatur, natus tempore dolores minus odit sint placeat maiores, molestiae mollitia? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit temporibus laboriosam expedita dolorum veritatis, ullam perspiciatis. Facere dolores, autem architecto quibusdam minus illum culpa quae possimus quod atque incidunt minima?</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis consequatur labore necessitatibus. Maxime doloribus eum pariatur dolore esse eligendi et totam commodi. Pariatur placeat eius facilis minus amet adipisci vitae! Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim repellat architecto, eligendi sed nesciunt provident laboriosam dicta illo quod commodi. Porro exercitationem omnis dolor veniam. Harum non officiis labore fugit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae maiores asperiores corrupti odio harum quos tempora perspiciatis magni necessitatibus in ullam fugit, officiis sint accusamus alias quo molestias beatae. Ad.</p>
+
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos a blanditiis dolorem ipsa mollitia maiores molestiae quod laborum error quibusdam officia corporis, explicabo repudiandae rerum, incidunt, tempore necessitatibus quam nam? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis harum ratione officia ab, magnam, voluptates officiis et hic inventore, recusandae obcaecati alias similique modi. Adipisci sint quaerat saepe odio magni!</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, accusantium rem voluptatum dolore tempore praesentium ducimus, dicta inventore assumenda minus nesciunt. Ipsam magni repudiandae error officiis perspiciatis enim obcaecati quibusdam. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam, omnis reprehenderit distinctio nobis culpa minima suscipit, laudantium ab neque, rem odit dignissimos modi perspiciatis nisi? Odio numquam a id quam! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum minima ipsam quaerat quos, repellat natus quam illum officia nobis dignissimos ex magnam. Eum nisi nulla tempora quam corrupti molestiae illum.</p>
+
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat, nam nostrum. Iste impedit perferendis veritatis officiis qui pariatur eius eos voluptate exercitationem ex at, beatae quisquam eum cum facilis? Cumque! Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique atque adipisci ratione quasi, enim necessitatibus vitae temporibus deleniti accusamus labore voluptates incidunt! Totam illum officiis quisquam, vel inventore molestias omnis? Lorem ipsum dolor sit amet consectetur adipisicing elit. Error corrupti eius atque? Aliquam molestiae nostrum, incidunt ipsa quo porro fugit, atque ipsum laudantium ullam enim exercitationem, perferendis esse culpa modi?</p>
+
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et atque vero perferendis facilis quo odio exercitationem, labore culpa? Voluptatem, dolorum fuga rerum perspiciatis sapiente temporibus commodi autem quaerat nisi id. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam cumque libero esse laboriosam fugiat saepe debitis facere delectus totam numquam exercitationem omnis similique impedit temporibus atque, suscipit illum soluta necessitatibus. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur ullam totam maiores asperiores repellat consequuntur aut ut in omnis commodi rem voluptas dolores fuga, accusamus eos deleniti similique natus voluptatum! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium quisquam dolore optio? Neque maxime saepe modi repellendus debitis incidunt, perspiciatis quia aperiam blanditiis inventore ipsa optio delectus assumenda deserunt eius!</p>
 </body>
 </html>
