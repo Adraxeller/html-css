@@ -56,7 +56,7 @@ img#tv { display: none;}
 
     body{
         background-image: url(../imagens/icon-print.png);
-        background-image: url(../imagens/back-print.jpg);/*desnecessario pois nao imprime fundos*/
+        background-image: url(../imagens/back-print.jpg);/*desnecessario pois não imprime fundos*/
     }
 
     main{
